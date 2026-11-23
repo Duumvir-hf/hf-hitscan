@@ -1,0 +1,20 @@
+[package]
+name = "hf-hitscan"
+version = "1.0.0"
+edition = "2021"
+description = "Hitscan lasers for HighFleet Steam 1.163: an ammo-bound damage type that damages along a beam instead of spawning a shell body."
+
+[lib]
+name = "hf_hitscan"
+crate-type = ["cdylib"]
+
+[dependencies]
+highfleet-mod-api = { git = "https://github.com/logdot/Highfleet-Modloader.git", tag = "v4.0.0" }
+log = "0.4.35"
+patchy = { package = "patchy-rs", git = "https://github.com/logdot/patchy-rs.git", tag = "v0.1.0" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+windows-sys = { version = "0.61.2", features = [
+    "Win32_System_LibraryLoader",
+    "Win32_System_Memory",
+] }

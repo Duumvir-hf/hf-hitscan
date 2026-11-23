@@ -1,0 +1,114 @@
+{
+  "enabled": true,
+  "verbose_logging": false,
+
+  "types": {
+    "hitscan_impact": {
+      "range": 5000.0,
+      "damage": 20.0,
+      "spread": 0.0,
+      "damage_decay_per_unit": 0.004,
+      "pierce": {
+        "enabled": false,
+        "stop_at": [],
+        "max_parts": 0
+      },
+      "ignore_armor_threshold": false,
+      "incendiary": 0.0,
+      "impact": {
+        "explosion": false,
+        "at": "first",
+        "explosive_power": 0.0
+      },
+      "visual": {
+        "color": "#FFFFFF",
+        "width": 1.0,
+        "glow": true,
+        "seconds": 1.0,
+        "fade": "linear"
+      }
+    },
+    "hitscan_explosive": {
+      "range": 2000.0,
+      "damage": 3.0,
+      "spread": 0.02,
+      "damage_decay_per_unit": 0.001,
+      "pierce": {
+        "enabled": false,
+        "stop_at": [],
+        "max_parts": 0
+      },
+      "ignore_armor_threshold": false,
+      "incendiary": 100.0,
+      "impact": {
+        "explosion": true,
+        "at": "first",
+        "explosive_power": 20.0
+      },
+      "visual": {
+        "color": "#FF7F00",
+        "width": 1.0,
+        "glow": true,
+        "seconds": 1.0,
+        "fade": "linear"
+      }
+    },
+    "hitscan_incendiary": {
+      "range": 5000.0,
+      "damage": 10.0,
+      "spread": 0.05,
+      "damage_decay_per_unit": 0.0,
+      "pierce": {
+        "enabled": true,
+        "stop_at": [],
+        "max_parts": 10
+      },
+      "ignore_armor_threshold": true,
+      "incendiary": 100.0,
+      "impact": {
+        "explosion": true,
+        "at": "first",
+        "explosive_power": 20.0
+      },
+      "visual": {
+        "color": "#FF0000",
+        "width": 1.0,
+        "glow": true,
+        "seconds": 1.0,
+        "fade": "linear"
+      }
+    },
+    "hitscan_pierce": {
+      "range": 2000.0,
+      "damage": 27.5,
+      "spread": 0.02,
+      "damage_decay_per_unit": 0.0125,
+      "pierce": {
+        "enabled": true,
+        "stop_at": [],
+        "max_parts": 0
+      },
+      "ignore_armor_threshold": false,
+      "incendiary": 0.0,
+      "impact": {
+        "explosion": true,
+        "at": "last",
+        "explosive_power": 2.0
+      },
+      "visual": {
+        "color": "#007FFF",
+        "width": 1.0,
+        "glow": true,
+        "seconds": 0.25,
+        "fade": "linear"
+      }
+    }
+  },
+
+  "shells": {
+    "ITEM_AMMO_EXAMPLE1": "hitscan_impact",
+    "ITEM_AMMO_EXAMPLE2": "hitscan_explosive",
+    "ITEM_AMMO_EXAMPLE3": "hitscan_incendiary",
+    "ITEM_AMMO_EXAMPLE4": "hitscan_pierce"
+  }
+}
